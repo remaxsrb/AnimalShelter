@@ -1,19 +1,16 @@
-
 .btn {
-    margin-left: 10px;
-    justify-content: center;
+	margin-left: 10px;
+	justify-content: center;
 }
 
-.row{
-    margin: auto;
+.row {
+	margin: auto;
 }
 
-.dropdown-item 
-{
-    justify-content: center;
+.dropdown-item {
+	justify-content: center;
 }
 
-.nav-link 
-{
-    justify-content: center;
+.nav-link {
+	justify-content: center;
 }
