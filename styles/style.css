@@ -207,6 +207,8 @@ a:focus {
 /*******************************/
 /******* Page Header CSS *******/
 /*******************************/
+
+
 .page-header {
     position: relative;
     margin-bottom: 45px;
@@ -217,6 +219,14 @@ a:focus {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#about{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/dogs.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .page-header h2 {
     position: relative;
@@ -229,7 +239,6 @@ a:focus {
     position: relative;
     padding: 0 12px;
     font-size: 20px;
-    text-transform: uppercase;
     color: #ffffff;
 }
 
@@ -237,16 +246,19 @@ a:focus {
     color: #ffffff;
 }
 
-.page-header a::after {
-    position: absolute;
-    content: "/";
-    width: 8px;
-    height: 8px;
-    top: -1px;
-    right: -7px;
-    text-align: center;
-    color: #fbaf32;
+
+.page-header .btn:last-child{
+    margin-left: 10px;
+    background: #00CCCC;
+    border-color: #00CCCC;
 }
+
+
+.page-header .btn:last-child:hover {
+    color: #00CCCC;
+    background: transparent;
+}
+
 
 
 @media (max-width: 767.98px) {
@@ -258,6 +270,10 @@ a:focus {
         font-size: 18px;
     }
 }
+
+
+
+
 
 
 /*******************************/
@@ -466,3 +482,134 @@ a:focus {
     text-align: center;
     background: rgba(0, 0, 0, .04);
 }
+
+
+/*******************************/
+/*********** Blog CSS **********/
+/*******************************/
+.blog {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 0 0;
+}
+
+.blog .blog-item {
+    position: relative;
+}
+
+.blog .blog-img {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.blog .blog-img img {
+    width: 100%;
+}
+
+.blog .blog-content {
+    position: relative;
+    width: calc(100% - 60px);
+    top: -60px;
+    left: 30px;
+    padding: 25px 30px 30px 30px;
+    background: #ffffff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.blog .blog-text {
+    position: relative;
+}
+
+.blog .blog-text p {
+    margin-bottom: 10px;
+}
+
+
+
+
+/*******************************/
+/********* Booking CSS *********/
+/*******************************/
+.reg-log {
+    position: relative;
+    width: 100%;
+    background: rgba(0, 0, 0, .04);
+}
+
+.reg-log .reg-log-content {
+    padding: 45px 0 15px 0;
+}
+
+.reg-log .reg-log-content .section-header {
+    margin-bottom: 30px;
+}
+
+.reg-log .reg-log-form {
+    padding: 60px 30px;
+    background: #00CCCC;
+}
+
+.reg-log .reg-log-form .control-group {
+    margin-bottom: 15px;
+}
+
+.reg-log .reg-log-form .input-group-text {
+    position: absolute;
+    padding: 0;
+    border: none;
+    background: none;
+    top: 15px;
+    right: 15px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.reg-log .reg-log-form .form-control {
+    height: 45px;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0 15px;
+    border-radius: 5px !important;
+    border: 1px solid #ffffff;
+    background: transparent;
+}
+
+.reg-log .reg-log-form select.form-control {
+    padding: 0 10px;
+}
+
+.reg-log .reg-log-form .form-control::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+
+.reg-log .reg-log-form .btn.custom-btn {
+    width: 100%;
+    color: #00CCCC;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.reg-log .reg-log-form .btn.custom-btn:hover {
+    color: #ffffff;
+    background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
