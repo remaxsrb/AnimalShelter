@@ -246,6 +246,20 @@ a:focus {
     color: #ffffff;
 }
 
+.page-header .bread a::after {
+    position: absolute;
+    content: "/";
+    width: 8px;
+    height: 8px;
+    top: -1px;
+    right: -7px;
+    text-align: center;
+    color: #fbaf32;
+}
+
+.page-header .bread a:last-child::after {
+    display: none;
+}
 
 .page-header .btn:last-child{
     margin-left: 10px;
@@ -258,7 +272,6 @@ a:focus {
     color: #00CCCC;
     background: transparent;
 }
-
 
 
 @media (max-width: 767.98px) {
@@ -337,7 +350,7 @@ a:focus {
     margin-bottom: 30px;
     padding: 50px 30px 30px;
     text-align: center;
-    background: #ffffff;
+    background: #F0FFFF;
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(0, 0, 0, .08);
     transition: .3s;
@@ -529,7 +542,24 @@ a:focus {
     margin-bottom: 10px;
 }
 
+.blog .blog-title {
+    align-self: center;
+}
 
+
+.card{
+    position: relative;
+    padding: 25px 30px 30px 30px;
+    padding-right: 20px;
+    background: #00CCCC;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.card .card-title{
+    align-self: center;
+}
 
 
 /*******************************/
@@ -602,7 +632,11 @@ a:focus {
 }
 
 
-
+.pets{
+    height: 240px;
+    width: 240px;
+    margin-bottom: 20px;
+}
 
 
 
