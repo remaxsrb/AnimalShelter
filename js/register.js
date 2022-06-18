@@ -12,10 +12,10 @@ function registerUser() {
   let password = document.getElementById("register-pass").value;
   let passwordConfirm = document.getElementById("register-conf-pass").value;
 
-
   checkFields(userName, email, password, passwordConfirm);
-
-  addUser(userName, email, password);
+  if (!checkIfUserExists(userName)) addUser(userName, email, password);
+  else document.getElementById("reg-username-error").innerHTML =
+  "Корисничко име је заузето.";
 }
 
 function checkPassword(password, passwordConfirm) {
@@ -49,33 +49,52 @@ function checkPassword(password, passwordConfirm) {
 }
 
 function checkFields(userName, email, password, passwordConfirm) {
+  checkUserName(userName);
+  checkEmail(email);
+  checkPassword(password, passwordConfirm);
+}
+
+function addUser(username, email, password) {
+  users.push({
+    username: username,
+    email: email,
+    password: password,
+  });
+
+  localStorage.setItem("users", JSON.stringify(users));
+}
+
+function checkUserName(username) {
   //username begins with a char
   //username can contain chars, numbers and underscores
   //username has min length and max length of 8 and 24 respectively
 
   let userNameRegex = /^[a-zA-Z]\w{7,24}$/;
 
-  if (userNameRegex.test(userName) == false) {
+  if (userNameRegex.test(username) == false) {
     document.getElementById("reg-username-error").innerHTML =
       "Корисничко име мора да почне словом. Корисничко име мора да садржи 8-24. Дозвољени карактери су алфанумерици и доња црта.";
   }
+}
 
+function checkEmail(email) {
   let emailRegex = /^[a-z]+\d?@[a-z]+.com/;
 
   if (emailRegex.test(email) == false) {
     document.getElementById("reg-email-error").innerHTML =
       "Адреса е-поште није исправно унета";
   }
-
-  checkPassword(password, passwordConfirm);
 }
 
-function addUser(uname, mail, pass) {
-  users.push({
-    username: uname,
-    email: mail,
-    password: pass,
-  });
+function initializeData() {
+  usersLocalStorage = localStorage.getItem("users");
+  if (usersLocalStorage != null) users = JSON.parse(usersLocalStorage);
+  else localStorage.setItem("users", JSON.stringify(users));
+}
 
-  localStorage.setItem("users", JSON.stringify(users));
+function checkIfUserExists(username) {
+  for (let i = 0; i < users.length; i++) {
+    if (username == users[i].username) return true;
+  }
+  return false;
 }
