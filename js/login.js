@@ -38,3 +38,10 @@ function checkIfValid(username, password) {
     }
   }
 }
+
+function logout() 
+{
+  user = JSON.parse(localStorage.getItem("loggedUser"));
+  if(user!= null)
+    localStorage.removeItem("loggedUser");
+}
