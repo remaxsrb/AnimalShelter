@@ -11,12 +11,14 @@ function login() {
   if (checkIfValid(username, password) != null) {
     loggedUser = checkIfValid(username, password);
     localStorage.setItem("loggedUser", JSON.stringify(loggedUser));
+    location.href='../webpages/index-user.html';
   }
 }
 
 //If verification is successful function returns user to be logged in
 function checkIfValid(username, password) {
   let users = localStorage.getItem("users");
+
   if (users != null) {
     users = JSON.parse(users);
     let usernames = [];
@@ -30,18 +32,19 @@ function checkIfValid(username, password) {
     }
 
     for (let i = 0; i < users.length; i++) {
-      if (username == users[i].username && password != users[i].password) {
-        document.getElementById("log-error").innerHTML = "Погрешна лозинка";
-        return null;
+      if (username == users[i].username) {
+        if (password != users[i].password) {
+          document.getElementById("log-error").innerHTML = "Погрешна лозинка";
+          return null;
+        }
+        
+        return users[i];
       }
-      return users[i];
     }
   }
 }
 
-function logout() 
-{
+function logout() {
   user = JSON.parse(localStorage.getItem("loggedUser"));
-  if(user!= null)
-    localStorage.removeItem("loggedUser");
+  if (user != null) localStorage.removeItem("loggedUser");
 }
