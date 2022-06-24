@@ -22,8 +22,8 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #719a0a;
     outline: none;
+    color: #00CCCC;
     text-decoration: none;
 }
 
@@ -657,7 +657,27 @@ a:focus {
 }
 
 
+/*******************************/
+/*********** Animals CSS **********/
+/*******************************/
 
+.menu {
+    position: relative;
+    padding: 45px 0 15px 0;
+}
 
-
-
+.wrapper {
+    width: 100%;
+    max-width: 31.25rem;
+    margin: 2rem auto;
+    margin-bottom: 50px;
+  }
+  
+  .search-bar, .sorting {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  
