@@ -38,10 +38,10 @@
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Animals</a>
                                 <div class="dropdown-menu">
-                                    <a href="pets.html" class="dropdown-item">Све</a> 
-                                    <a href="dogs.html" class="dropdown-item">Пси</a>                                    
-                                    <a href="cats.html" class="dropdown-item">Мачке</a>
-                                    <a href="birds.html" class="dropdown-item">Птице</a>
+                                    <a href="pets.html" class="dropdown-item">All</a> 
+                                    <a href="dogs.html" class="dropdown-item">Dogs</a>                                    
+                                    <a href="cats.html" class="dropdown-item">Cats</a>
+                                    <a href="birds.html" class="dropdown-item">Birds</a>
                                 </div>
                             </div>
                             <a href="about.html" class="nav-item nav-link">Lost pets</a>
@@ -67,8 +67,8 @@
                     <div class="col-12">
                         <h2>Welcome!</h2><br><br>
 						<div>
-							<a class="btn custom-btn reg-log-btn log-btn" data-toggle="modal" data-target="#login-modal">Login in</a>
-							<a class="btn custom-btn reg-log-btn reg-btn" data-toggle="modal" data-target="#register-modal">Registar</a>
+							<a class="btn custom-btn reg-log-btn log-btn" data-toggle="modal" data-target="#login-modal">Login</a>
+							<a class="btn custom-btn reg-log-btn reg-btn" data-toggle="modal" data-target="#register-modal">Register</a>
 						</div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@
                                 <form>
                                     <div class="control-group">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" id="login-username" placeholder="Korisničko ime" />
+                                            <input type="text" class="form-control" id="login-username" placeholder="Username" />
                                             <div class="input-group-append">
                                                 <div class="input-group-text"><i class="far fa-user"></i></div>
                                             </div>
@@ -165,7 +165,7 @@
                                     </div>
                                     <div class="control-group">
                                         <div class="input-group">
-                                            <input type="password" class="form-control" id="login-pass" placeholder="Lozinka" />
+                                            <input type="password" class="form-control" id="login-pass" placeholder="Password" />
                                             <div class="input-group-append">
                                                 <div class="input-group-text"><i class="fa fa-key"></i></div>
                                             </div>
@@ -173,7 +173,7 @@
                                         <div class="errors" id="log-error"></div>
                                     </div>
                                     <div>
-                                        <button class="btn custom-btn" id="login-submit" class="confirm-btn">Potvrdi</button>
+                                        <button class="btn custom-btn" id="login-submit" class="confirm-btn">Confirm</button>
                                     </div>
                                 </form>
                             </div>
@@ -191,7 +191,7 @@
                     <div class="reg-log">
                         <div class="reg-log-form">
                             <div class="modal-header">
-                                <h3 class="modal-title" id="reg-modal">Registracija</h5>
+                                <h3 class="modal-title" id="reg-modal">Register</h5>
                                 <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -200,7 +200,7 @@
                                 <form>
                                     <div class="control-group">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" id="register-username" placeholder="Korisničko ime" />
+                                            <input type="text" class="form-control" id="register-username" placeholder="Username" />
                                             <div class="input-group-append">
                                                 <div class="input-group-text"><i class="far fa-user"></i></div>
                                             </div>
@@ -209,7 +209,7 @@
                                     </div>
                                     <div class="control-group">
                                         <div class="input-group">
-                                            <input type="email" class="form-control" id="register-email" placeholder="Email" />
+                                            <input type="email" class="form-control" id="register-email" placeholder="e-mail" />
                                             <div class="input-group-append">
                                                 <div class="input-group-text"><i class="far fa-envelope"></i></div>
                                             </div>
@@ -218,7 +218,7 @@
                                     </div>
                                     <div class="control-group">
                                         <div class="input-group">
-                                            <input type="password" class="form-control" id="register-pass" placeholder="Lozinka" />
+                                            <input type="password" class="form-control" id="register-pass" placeholder="Password" />
                                             <div class="input-group-append">
                                                 <div class="input-group-text"><i class="fa fa-key"></i></div>
                                             </div>
@@ -227,7 +227,7 @@
                                     </div>
                                     <div class="control-group">
                                         <div class="input-group">
-                                            <input type="password" class="form-control" id="register-conf-pass" placeholder="Potvrdite lozinku" />
+                                            <input type="password" class="form-control" id="register-conf-pass" placeholder="Confirm password" />
                                             <div class="input-group-append">
                                                 <div class="input-group-text"><i class="fa fa-key"></i></div>
                                             </div>
@@ -235,7 +235,7 @@
                                         <div class="errors" id="reg-conf-pass-error"></div>
                                     </div>
                                     <div>
-                                        <button class="btn custom-btn" id="register-submit">Potvrdi</button>
+                                        <button class="btn custom-btn" id="register-submit">Confirm</button>
                                     </div>
                                 </form>
                             </div>
@@ -259,6 +259,8 @@
         <script src="../js/main.js"></script>
         <script src="../js/index.js"></script>
         <script src="../js/translate/index-trans.js"></script>
+        <script src="../js/register.js"></script>
+        <script src="../js/login.js"></script>
             
 </body>
 </html>
