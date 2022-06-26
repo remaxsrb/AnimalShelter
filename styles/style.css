@@ -680,3 +680,76 @@ a:focus {
   }
   
   
+
+
+  /*******************************/
+/********* Add Recipe CSS *********/
+/*******************************/
+.add-recipe {
+    position: relative;
+    width: 100%;
+    background: #00CCCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.add-recipe .add-recipe-content {
+    padding: 45px 0 15px 0;
+}
+
+
+.add-recipe .add-recipe-form {
+    padding: 60px 30px;
+    background: #00CCCC;
+    width: 60%;
+}
+
+
+.select-color {
+    color:#00CCCC;
+}
+
+.add-recipe .add-recipe-form .control-group {
+    margin-bottom: 15px;
+}
+
+.add-recipe .add-recipe-form .input-group-text {
+    position: absolute;
+    padding: 0;
+    border: none;
+    background: none;
+    top: 15px;
+    right: 15px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.add-recipe .add-recipe-form .form-control {
+    height: 45px;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0 15px;
+    border-radius: 5px !important;
+    border: 1px solid #ffffff;
+    background: transparent;
+}
+
+.add-recipe .add-recipe-form .form-control::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.add-recipe .add-recipe-form .btn.custom-btn {
+    width: 50%;
+    color: #ffffff;
+    background: #fbaf32;
+}
+
+.form-label {
+    align-self: center;
+    color: #fff;
+}
+
+
