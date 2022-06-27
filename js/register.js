@@ -1,11 +1,3 @@
-let users = [
-  {
-    username: "_",
-    email: "_",
-    password: "_",
-  },
-];
-
 function registerUser() {
   let userName = document.getElementById("register-username").value;
   let email = document.getElementById("register-email").value;
@@ -14,8 +6,9 @@ function registerUser() {
 
   checkFields(userName, email, password, passwordConfirm);
   if (!checkIfUserExists(userName)) addUser(userName, email, password);
-  else document.getElementById("reg-username-error").innerHTML =
-  "Корисничко име је заузето.";
+  else
+    document.getElementById("reg-username-error").innerHTML =
+      "Корисничко име је заузето.";
 }
 
 function checkPassword(password, passwordConfirm) {
@@ -55,6 +48,7 @@ function checkFields(userName, email, password, passwordConfirm) {
 }
 
 function addUser(username, email, password) {
+  let users = localStorage.getItem("users");
   users.push({
     username: username,
     email: email,
@@ -84,12 +78,6 @@ function checkEmail(email) {
     document.getElementById("reg-email-error").innerHTML =
       "Адреса е-поште није исправно унета";
   }
-}
-
-function initializeData() {
-  usersLocalStorage = localStorage.getItem("users");
-  if (usersLocalStorage != null) users = JSON.parse(usersLocalStorage);
-  else localStorage.setItem("users", JSON.stringify(users));
 }
 
 function checkIfUserExists(username) {
