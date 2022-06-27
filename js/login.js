@@ -11,7 +11,7 @@ function login() {
   if (checkIfValid(username, password) != null) {
     loggedUser = checkIfValid(username, password);
     localStorage.setItem("loggedUser", JSON.stringify(loggedUser));
-    location.href='../webpages/index-user.html';
+    location.href = "../webpages/index-user.html";
   }
 }
 
@@ -37,7 +37,7 @@ function checkIfValid(username, password) {
           document.getElementById("log-error").innerHTML = "Погрешна лозинка";
           return null;
         }
-        
+
         return users[i];
       }
     }
@@ -46,5 +46,10 @@ function checkIfValid(username, password) {
 
 function logout() {
   user = JSON.parse(localStorage.getItem("loggedUser"));
-  if (user != null) localStorage.removeItem("loggedUser");
+  
+  if (user != null) {
+    
+    localStorage.removeItem("loggedUser");
+    location.href = "../webpages/index.html";
+  }
 }
