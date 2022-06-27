@@ -54,5 +54,5 @@ function initializeUsers() {
 function initializeLostAnimals() {
 let lostAnimalsLocalStorage = localStorage.getItem("lostAnimals");
   if (lostAnimalsLocalStorage != null) users = JSON.parse(lostAnimalsLocalStorage);
-  else lostAnimals.setItem("lostAnimals", JSON.stringify(lostAnimals));
+  else localStorage.setItem("lostAnimals", JSON.stringify(lostAnimals));
 }
