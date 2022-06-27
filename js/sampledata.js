@@ -26,16 +26,16 @@ let lostAnimals = [
       user: "korisnik1",
     },
     {
-        petName: "name1",
+        petName: "name2",
         phone: "+381651234568",
         opis: "animal desc",
         user: "korisnik2",
     },
     {
-        petName: "name1",
+        petName: "name3",
         phone: "+381651234569",
         opis: "opis zivotinje",
-        user: "korisnik2",
+        user: "korisnik3",
     },
   ];
 
