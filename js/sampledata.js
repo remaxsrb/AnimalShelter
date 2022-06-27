@@ -2,19 +2,19 @@
 //TODO - add sample animals to localstorage
 let users = [
   {
-    username: "korisnik1",
-    email: "address1@domain.com",
-    password: "Password_1",
+    username: "lazar",
+    email: "lazar@gmail.com",
+    password: "lazar",
   },
   {
-    username: "korisnik2",
-    email: "address2@domain.com",
-    password: "Password_2",
+    username: "marko",
+    email: "marko@gmail.com",
+    password: "marko",
   },
   {
-    username: "korisnik3",
-    email: "address3@domain.com",
-    password: "Password_3",
+    username: "andrijana",
+    email: "andrijana@hotmail.com",
+    password: "andrijana",
   },
 ];
 
