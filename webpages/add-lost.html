@@ -85,22 +85,22 @@
                     <form method="post" action="" enctype="multipart/form-data" id="myform">
                         <div class="control-group">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Име љубимца" id="add-recipe-name" />
+                                <input type="text" class="form-control" placeholder="Име љубимца" id="petName" />
                             </div>
                         </div>
                         <div class="control-group">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Контакт телефон" id="add-recipe-name" />
+                                <input type="text" class="form-control" placeholder="Контакт телефон" id="phoneNumber" />
                             </div>
                         </div>
                         <label for="" class="form-label" id="add-recipe-instructions-label">Опис:</label>
                         <div class="control-group">
                             <div class="input-group">
-                                <textarea class="form-control" placeholder="" rows="10" id="add-recipe-instructions"></textarea>
+                                <textarea class="form-control" placeholder="" rows="10" id="petDescription"></textarea>
                             </div>
                         </div>
                         <div>
-                            <button class="btn custom-btn" type="submit" id="add-recipe">Постави оглас</button>
+                            <button class="btn custom-btn" type="submit" id="add-recipe" onclick="addLostPet()">Постави оглас</button>
                         </div>
                     </form>
             </div>
@@ -125,6 +125,7 @@
         
         <!-- Template Javascript -->
         <script src="../js/main.js"></script>
+        <script src="../js/addlostanimal.js"></script>
             
 </body>
 </html>

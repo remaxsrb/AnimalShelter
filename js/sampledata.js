@@ -4,17 +4,17 @@ let users = [
   {
     username: "lazar",
     email: "lazar@gmail.com",
-    password: "lazar",
+    password: "Lazar_1",
   },
   {
     username: "marko",
     email: "marko@gmail.com",
-    password: "marko",
+    password: "Marko_1",
   },
   {
     username: "andrijana",
     email: "andrijana@hotmail.com",
-    password: "andrijana",
+    password: "Andrijana_1",
   },
 ];
 
@@ -23,19 +23,19 @@ let lostAnimals = [
       petName: "name1",
       phone: "+381651234567",
       opis: "opis",
-      user: "korisnik1",
+      user: "lazar",
     },
     {
         petName: "name2",
         phone: "+381651234568",
         opis: "animal desc",
-        user: "korisnik2",
+        user: "marko",
     },
     {
         petName: "name3",
         phone: "+381651234569",
         opis: "opis zivotinje",
-        user: "korisnik3",
+        user: "andrijana",
     },
   ];
 
