@@ -6,11 +6,9 @@ $(document).ready(function() {
         let currAnimal = ""
         for (let i = 0; i < lostAnimals.length; ++i) {
 
-            currAnimal += "<div class='col-md-4 special-grid animals' id = '" + lostAnimals[i].petName + "'>" + 
-                                "<a href='#'>" +
-                                    "<p style='color: #OOFFFF;'>" + lostAnimals[i].petName + " | " + lostAnimals[i].opis + " | " + lostAnimals[i].phone + " | " + lostAnimals[i].user +  "</p>" +
-                                "</a>" +
-                            "</div>"
+            currAnimal += "<div class='col-md-4 special-grid animals' id = '" + lostAnimals[i].petName + "'> <a href = '#'>"
+                    + "<div class='food-item'>" + "<h2 class = 'text-center'>" + lostAnimals[i].petName +"</h2>" + "<p class = 'text-center'>" + lostAnimals[i].opis +  "</p>"
+                    +"</div></a></div>";
         }
         $("#pics").html(currAnimal)
     }

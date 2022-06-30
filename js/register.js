@@ -4,7 +4,9 @@ function registerUser() {
   let password = document.getElementById("register-pass").value;
   let passwordConfirm = document.getElementById("register-conf-pass").value;
 
+
   checkFields(userName, email, password, passwordConfirm);
+  
   if (!checkIfUserExists(userName)) addUser(userName, email, password);
   else
     document.getElementById("reg-username-error").innerHTML =
@@ -54,8 +56,9 @@ function addUser(username, email, password) {
     email: email,
     password: password,
   });
-
+  alert("Dobar")
   localStorage.setItem("users", JSON.stringify(users));
+  alert("Успешна регистрација!");
 }
 
 function checkUserName(username) {

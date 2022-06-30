@@ -9,9 +9,9 @@ $(document).ready(function() {
         for (let i = 0; i < 3; ++i) {
 
             currAnimal += "<div class='col-md-4 special-grid animals' id = '" + lostAnimals[i].petName + "'> <a href = '#'>"
-                    + "<div class='food-item'>" + "<h2>" + lostAnimals[i].petName +"</h2>" + "<p>" + lostAnimals[i].opis +  "</p>"
+                    + "<div class='food-item'>" + "<h2 class = 'text-center'>" + lostAnimals[i].petName +"</h2>" + "<p class = 'text-center'>" + lostAnimals[i].opis +  "</p>"
                     +"</div></a></div>";
-            }
+        }
 
         $("#pics").html(currAnimal)
 
