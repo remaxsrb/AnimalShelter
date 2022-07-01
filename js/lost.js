@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(document).ready(function() {
     let currLostAnimal = JSON.parse(localStorage.getItem("currLostAnimal"))
     let lostAnimals = JSON.parse(localStorage.getItem("lostAnimals"))
@@ -33,72 +32,9 @@ $(document).ready(function() {
         $(".comment-form").hide()
     }   
 
-    showComments()
-
-    $("#comment-submit").click(function() {
-        $("#msg-empty-error").text("")
-    
-        let msg = $("#message").val()
-    
-        if (msg == "") {
-            $("#msg-empty-error").text("Niste uneli tekst komentara");
-            return false
-        }
-        else {
-            let user = JSON.parse(localStorage.getItem("loggedUser"))
-    
-            let comment = {
-                author : user.username,
-                message : msg,
-                add: currLostAnimal.petName
-            }
-    
-            
-            let comments = JSON.parse(localStorage.getItem("comments"))
-
-            comments.push(comment)
-            localStorage.setItem("comments", JSON.stringify(comments))
-            sessionStorage.setItem("loggedUser", JSON.stringify(user))
-            
-            let num = 0
-
-            comments = JSON.parse(localStorage.getItem("comments"))
-
-            for(let i=0; i<comments.length;i++){
-                if(comments[i].add == currLostAnimal.petName) num++;
-            }
-
-            $("#message").val('')
-            $("#recipe-comments").text(num + " коментара")
-
-            showComments()
-        }
-    })
-
-
-    function showComments() {
-
-        let comments = JSON.parse(localStorage.getItem("comments"))
-        let commentSection = ""
-        for(let i=0; i<comments.length;i++){
-            if(comments[i].add == currLostAnimal.petName){
-                commentSection +=   "<li class='comment-item'>" +
-                "<div class='comment-body'>" +
-                    "</div>" +
-                    "<div class='comment-text'>" +
-                        "<h3>" + comments[i].author + "</h3>" +
-                        "<p>" + comments[i].message + "</p>" +
-                    "</div>" + 
-                "</div>" +
-            "</li>"
-            }
-        }
-        $(".comment-list").html(commentSection)
-    }
-
-
 
 })
+
 
 function addChar(word, char) {
     if (char == 'č'|| char == 'ć') {
@@ -137,6 +73,7 @@ function generatePDF(){
     let text = ""
     let allPages = []
     let add = JSON.parse(localStorage.getItem("currLostAnimal"))
+    let language = sessionStorage.getItem("language")
 
     let lineCnt = 1
     let pageCnt = 1
@@ -175,5 +112,3 @@ function generatePDF(){
     }
     doc.save(add.name)
 }
-=======
->>>>>>> parent of e7f9981 (приказ појединачног огласа)

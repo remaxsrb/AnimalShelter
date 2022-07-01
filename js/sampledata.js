@@ -39,18 +39,9 @@ let lostAnimals = [
     },
   ];
 
-let comments = [
-    {
-      author: "аutor",
-      message: "poruka",
-      add: "oglas",
-    }
-  ];
-
 function initializeData() {
   initializeUsers();
   initializeLostAnimals();
-  initializeComments();
 }
 
 function initializeUsers() {
@@ -65,9 +56,3 @@ let lostAnimalsLocalStorage = localStorage.getItem("lostAnimals");
   if (lostAnimalsLocalStorage != null) users = JSON.parse(lostAnimalsLocalStorage);
   else localStorage.setItem("lostAnimals", JSON.stringify(lostAnimals));
 }
-
-function initializeComments() {
-  let commentsLocalStorage = localStorage.getItem("comments");
-    if (commentsLocalStorage != null) comments = JSON.parse(commentsLocalStorage);
-    else localStorage.setItem("comments", JSON.stringify(comments));
-  }
