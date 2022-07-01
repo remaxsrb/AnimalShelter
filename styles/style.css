@@ -971,4 +971,150 @@ a:focus {
     display: inline-block;
 }
 
+.single .single-comment {
+    position: relative;
+    margin-bottom: 45px;
+}
 
+.single .single-comment h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.single .comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.single .comment-child {
+    list-style: none;
+}
+
+.single .comment-body {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.single .comment-img {
+    width: 60px;
+}
+
+.single .comment-img img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.single .comment-text {
+    padding-left: 15px;
+    width: calc(100% - 60px);
+}
+
+.single .comment-text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.single .comment-text span {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.single .comment-text .btn {
+    padding: 3px 10px;
+    font-size: 14px;
+    color: #454545;
+    background: #dddddd;
+    border-radius: 5px;
+}
+
+.single .comment-text .btn:hover {
+    background: #fbaf32;
+}
+
+.single .comment-form {
+    position: relative;
+}
+
+.single .comment-form h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.single .comment-form form {
+    padding: 30px;
+    background: #f3f6ff;
+}
+
+.single .comment-form form .form-group:last-child {
+    margin: 0;
+}
+
+.single .comment-form input,
+.single .comment-form textarea {
+    border-radius: 5px;
+}
+
+
+/*******************************/
+/********* User Comments CSS *********/
+/*******************************/
+
+.menu li .user-comment-text{
+    width: 100%;
+}
+
+.menu li .user-profile-link {
+    width: 150px;
+    text-align: center;
+}
+
+.user-comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.user-comment-child {
+    list-style: none;
+}
+
+.user-comment-body {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.user-comment-img {
+    width: 60px;
+}
+
+.user-comment-img img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.user-comment-text {
+    padding-left: 15px;
+    width: calc(100% - 60px);
+    text-align: left;
+}
+
+.user-comment-text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    text-align: left;
+    width: 100%;
+}
+
+.user-comment-text span {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    
+    text-align: left;
+}
