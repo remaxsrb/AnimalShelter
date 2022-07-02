@@ -37,6 +37,12 @@ let lostAnimals = [
     opis: "Нестала женка у Борчи. Зове се Беба, има 4 месеца и личи на Вучјака, ако је видите, јавите се. Следи награда.",
     user: "andrijana",
   },
+  {
+    petName: "Keti",
+    phone: "+381651234569",
+    opis: "Nestala je zenka mladunce retrivera u Beogradu.",
+    user: "andrijana",
+  },
 ];
 
 let comments = [

@@ -121,27 +121,9 @@ $(document).ready(function () {
   }
 });
 
-function addChar(word, char) {
-  if (char == "č" || char == "ć") {
-    word += "c";
-  } else if (char == "Č" || char == "Ć") {
-    word += "C";
-  } else if (char == "đ") {
-    word += "dj";
-  } else if (char == "Đ") {
-    word += "Dj";
-  } else if (char == "š") {
-    word += "s";
-  } else if (char == "Š") {
-    word += "S";
-  } else if (char == "ž") {
-    word += "z";
-  } else if (char == "Ž") {
-    word += "Z";
-  } else {
-    word += char;
-  }
 
+function addChar(word, char) {
+  word += char;
   return word;
 }
 
@@ -177,8 +159,8 @@ function generatePDF() {
   }
 
   doc.text(addName, 80, 10);
-  doc.text("Име корисника " + add.user, 5, 20);
-  doc.text("Контакт телефон " + add.phone, 5, 20);
+  doc.text("Ime korisnika : " + add.user, 5, 20);
+  doc.text("Kontakt telefon : " + add.phone, 5, 30);
   allPages.push(text);
   for (let i = 0; i < allPages.length; ++i) {
     if (i == 0) {
