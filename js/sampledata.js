@@ -49,22 +49,32 @@ let comments = [
 
 let dogs = [
   {
-    species: "labrador",
-    author: "Марко Јовановић",
-    date: "1-јул-2022",
+    name: "Бони",
     description: "Лабрадор",
+    weight: "8kg",
+    years: 5,
+    img1: "lab1.jfif",
+    img2: "lab2.jfif",
+    img3: "lab3.jfif",
+    video: "lab1.mp4"
   },
   {
-    species: "vucijak",
-    author: "Марко Јовановић",
-    date: "1-јул-2022",
+    name: "Бети",
     description: "Вучијак",
+    weight: "10kg",
+    years: 3,
+    img1: "shepard1.jpg",
+    img2: "shepard2.jpg",
+    img3: "shepard3.jpg",
   },
   {
-    species: "akitainu",
-    author: "Марко Јовановић",
-    date: "1-јул-2022",
-    description: "Акита ину",
+    name: "Дона",
+    description: "Акита Ино ",
+    weight: "9кг",
+    years: 7,
+    img1: "akitu1.webp",
+    img2: "akitu2.jpg",
+    img3: "akitu3.jpg",
   },
 ];
 

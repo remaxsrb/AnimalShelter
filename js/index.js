@@ -1,7 +1,5 @@
 $(document).ready(function() {
     let lostAnimals = JSON.parse(localStorage.getItem("lostAnimals"))
-    let language = sessionStorage.getItem("language")
-
 
     function showAnimals() {
 
