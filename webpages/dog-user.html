@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Нада - Мој профил</title>
+        <title>Nada - O nama</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
@@ -18,13 +18,12 @@
 
         <link rel="stylesheet" href="../styles/style.css">
 
-        <title>Мој профил</title>
+        <title>Пас</title>
     </head>
 
     <body>
-            <!-- Nav Bar Start -->
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
+           <!-- Nav Bar Start -->
+           <div class="navbar navbar-expand-lg bg-light navbar-light">
             <div class="container-fluid">
                 <a href="index-user.html"><img src="../img/logo-color-trans.png" height="80px" width="80px"></a>
                 &nbsp; &nbsp;
@@ -66,56 +65,74 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2 id="h2-about">Мој налог</h2>
+                        <h2 id="h2-about" class="pet-name"></h2>
                     </div>
                     <div class="col-12">
                         <div class="bread">
                             <a href="index.html">Почетна</a>
-                            <a href="losts.html">Мој налог</a>
+                            <a href="pets.html">Животиње</a>
+                            <a href="dogs.html">Пси</a>
+                            <a href="" class="pet-name"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Page Header End -->
+        
 
-
-        <!-- Menu Start -->
-        <div class="menu user-profile-menu">
+        <!-- Single Post Start-->
+        <div class="single">
             <div class="container">
-                <div class="menu-tab">
-                    <ul class="nav nav-pills justify-content-center listing">
-                        <li class="nav-item">
-                            <a class="nav-link user-profile-link" data-toggle="pill" id="user-profile-adds">Моји огласи</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link user-profile-link " data-toggle="pill" id="user-profile-comments">Моји коментари</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="row" id="user-profile-things">
-            </div>
-        </div>        
-           
-
-
-        <!-- Footer Start -->
-        <div class="footer">
-            <div class="copyright">
-                <div class="container">
-                    <p id="footer-text">Copyright &copy; 2022 Марко Јовановић, Лазар Госпавић <br> Одсек за софтверско инжењерство Електрохетнички факултет, Универзитет у Београду.</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="sidebar">
+                            <div class="sidebar-widget">
+                                <h2 class="widget-title add-name">Име љубимца: </h2>
+                                <h2 class="widget-title add-desc">Опис: </h2>
+                                <h2 class="widget-title add-year">Година: </h2>
+                                <h2 class="widget-title add-weight">Тежина: </h2>
+                            </div>
+                        </div>
+                        <div class="single-content pet-video">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="sidebar">
+                            <div class="sidebar-widget">
+                                <div class="image-widget images-and-videos">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- Single Post End-->   
+
+
+
+        <!-- Footer Start -->
+        <footer class="mt-auto">
+            <div class="footer">
+                <div class="copyright">
+                    <div class="container">
+                        <p id="footer-text">Copyright &copy; 2022 Марко Јовановић, Лазар Госпавић <br> Одсек за софтверско инжењерство Електрохетнички факултет, Универзитет у Београду.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- Footer End -->
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
 
         
         <!-- Template Javascript -->
-        <script src="../js/user-profile.js"></script>
-        <script src="../js/login.js"></script>  
+        <script src="../js/pet.js"></script>
+        <script src="../js/login.js"></script>
+            
 </body>
 </html>

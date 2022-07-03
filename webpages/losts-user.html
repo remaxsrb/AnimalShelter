@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nada - O nama</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free Website Template" name="keywords" />
+    <meta content="Free Website Template" name="description" />
+
+    <link href="../img/logo-color-trans.png" rel="icon" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Libraries -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles/style.css" />
+
+    <title>O nama</title>
+  </head>
+
+  <body>
+                <!-- Nav Bar Start -->
+                <div class="navbar navbar-expand-lg bg-light navbar-light">
+                    <div class="container-fluid">
+                        <a href="index-user.html"><img src="../img/logo-color-trans.png" height="80px" width="80px"></a>
+                        &nbsp; &nbsp;
+                        <a href="index-user.html" class="navbar-brand">НАДА</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                            
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav ml-auto">
+                                <a href="index-user.html" class="nav-item nav-link active">Почетна</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Животиње</a>
+                                    <div class="dropdown-menu">
+                                        <a href="pets-user.html" class="dropdown-item">Све</a> 
+                                        <a href="dogs-user.html" class="dropdown-item">Пси</a>                                    
+                                        <a href="cats-user.html" class="dropdown-item">Мачке</a>
+                                        <a href="birds-user.html" class="dropdown-item">Птице</a>
+                                    </div>
+                                </div>
+                                <a href="about-user.html" class="nav-item nav-link">Изгубљени љубимци</a>
+                                <a href="add-lost.html" class="nav-item nav-link">Додај оглас</a>
+                                <a href="user-profile.html" class="nav-item nav-link">Мој налог</a>
+                                <a href="about-user.html" class="nav-item nav-link">О нама</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Језик</a>
+                                    <div class="dropdown-menu">
+                                        <a href="index-user.html" class="dropdown-item" id="srb">Српски</a>
+                                        <a href="index-eng.html" class="dropdown-item" id="eng">Енглески</a>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-danger log-out-btn" onclick="logout()">Одјави се</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <!-- Page Header Start -->
+    <div class="page-header mb-0" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 id="h2-about">Изгубљени љубимци</h2>
+          </div>
+          <div class="col-12">
+            <div class="bread">
+              <a href="index.html">Почетна</a>
+              <a href="">Изгубљени љубимци</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Menu Start -->
+    <div class="menu all-recipes">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 id="h2-recipes-header">Изгубљени љубимци</h2>
+        </div>
+        <div class="row" id="pics">
+          <!-- Recipes -->
+        </div>
+      </div>
+    </div>
+    <!-- Menu End -->
+
+    <!-- Footer Start -->
+    <div class="footer">
+      <div class="copyright">
+        <div class="container">
+          <p id="footer-text">
+            Copyright &copy; 2022 Марко Јовановић, Лазар Госпавић <br />
+            Одсек за софтверско инжењерство Електрохетнички факултет,
+            Универзитет у Београду.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/losts.js"></script>
+    <script src="../js/login.js"></script>
+  </body>
+</html>
