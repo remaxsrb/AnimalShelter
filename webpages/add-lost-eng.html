@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Nada - O nama</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <link href="../img/logo-color-trans.png" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="../styles/style.css">
+
+        <title>O nama</title>
+    </head>
+
+    <body>
+            <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index-eng.html"><img src="../img/logo-color-trans.png" height="80px" width="80px"></a>
+                &nbsp; &nbsp;
+                <a href="index-eng.html" class="navbar-brand">НАДА</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index-eng.html" class="nav-item nav-link active">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Animals</a>
+                            <div class="dropdown-menu">
+                                <a href="pets-eng.html" class="dropdown-item">All</a>
+                                <a href="dogs-eng.html" class="dropdown-item">Dogs</a>
+                                <a href="cats-eng.html" class="dropdown-item">Cats</a>
+                                <a href="birds-eng.html" class="dropdown-item">Birds</a>
+                            </div>
+                        </div>
+                        <a href="losts-eng.html" class="nav-item nav-link">Lost pets</a>
+                        <a href="about-eng.html" class="nav-item nav-link">About us</a>
+                        <a href="#" class="nav-item nav-link">My profile</a>
+                        <a href="about-eng.html" class="nav-item nav-link">About us</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle"  data-toggle="dropdown"
+                            >Language</a
+                          >
+                          <div class="dropdown-menu">
+                            <a href="blog.html" class="dropdown-item">Serbian</a>
+                            <a href="single.html" class="dropdown-item">English</a>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-danger log-out-btn" onclick="logout()">Log out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header Start -->
+        <div class="page-header mb-0" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 id="h2-about">Add lost pet</h2>
+                    </div>
+                    <div class="col-12">
+                        <div class="bread">
+                            <a href="index.html">Home</a>
+                            <a href="">Add lost pet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        
+        <!-- Add Recipe Form Start -->
+        <div class="add-recipe">
+            <div class="add-recipe-form">
+                <h3 class="form-label" id="reg-modal">Add lost pet:</h5>
+                    <form method="post" action="" enctype="multipart/form-data" id="myform">
+                        <div class="control-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Pet name" id="petName" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Phone" id="phoneNumber" />
+                            </div>
+                        </div>
+                        <label for="" class="form-label" id="add-recipe-instructions-label">Опис:</label>
+                        <div class="control-group">
+                            <div class="input-group">
+                                <textarea class="form-control" placeholder="" rows="10" id="petDescription"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn custom-btn" type="submit" id="add-recipe" onclick="addLostPet()">Submit</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+        <!-- Add Recipe Modal End -->
+
+
+         <!-- Footer Start -->
+         <div class="footer">
+            <div class="copyright">
+                <div class="container">
+                    <p id="footer-text">Copyright &copy; 2022 Marko Jovanović, Lazar Gospavić <br />
+                        Department of Software Enginering School of Electrical enginering,
+                        University of Belgrade.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+        
+        <!-- Template Javascript -->
+        <script src="../js/addlostanimal.js"></script>
+            
+</body>
+</html>
