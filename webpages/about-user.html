@@ -1,238 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Нада - О нама</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
+  <head>
+    <meta charset="utf-8" />
+    <title>Нада - О нама</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free Website Template" name="keywords" />
+    <meta content="Free Website Template" name="description" />
 
-        <link href="../img/logo-color-trans.png" rel="icon">
+    <link href="../img/logo-color-trans.png" rel="icon" />
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
-        
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="../styles/style.css">
+    <!-- CSS Libraries -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
-    </head>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
 
-    <body>
-            <!-- Nav Bar Start -->
-            <div class="navbar navbar-expand-lg bg-light navbar-light">
-                <div class="container-fluid">
-                    <a href="index-user.html"><img src="../img/logo-color-trans.png" height="80px" width="80px"></a>
-                    &nbsp; &nbsp;
-                    <a href="index-user.html" class="navbar-brand">НАДА</a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                        
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav ml-auto">
-                            <a href="index-user.html" class="nav-item nav-link active">Почетна</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Животиње</a>
-                                <div class="dropdown-menu">
-                                    <a href="pets-user.html" class="dropdown-item">Све</a> 
-                                    <a href="dogs-user.html" class="dropdown-item">Пси</a>                                    
-                                    <a href="cats-user.html" class="dropdown-item">Мачке</a>
-                                    <a href="birds-user.html" class="dropdown-item">Птице</a>
-                                </div>
-                            </div>
-                            <a href="losts-user.html" class="nav-item nav-link">Изгубљени љубимци</a>
-                            <a href="add-lost.html" class="nav-item nav-link">Додај оглас</a>
-                            <a href="user-profile.html" class="nav-item nav-link">Мој налог</a>
-                            <a href="about-user.html" class="nav-item nav-link">О нама</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Језик</a>
-                                <div class="dropdown-menu">
-                                    <a href="index-user.html" class="dropdown-item" id="srb">Српски</a>
-                                    <a href="index-eng.html" class="dropdown-item" id="eng">Енглески</a>
-                                </div>
-                            </div>
-                            <button class="btn btn-outline-danger log-out-btn" onclick="logout()">Одјави се</button>
-                        </div>
-                    </div>
-                </div>
+  <body>
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="container-fluid">
+        <a href="index-user.html"
+          ><img src="../img/logo-color-trans.png" height="80px" width="80px"
+        /></a>
+        &nbsp; &nbsp;
+        <a href="index-user.html" class="navbar-brand">НАДА</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ml-auto">
+            <a href="index-user.html" class="nav-item nav-link active"
+              >Почетна</a
+            >
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                >Животиње</a
+              >
+              <div class="dropdown-menu">
+                <a href="pets-user.html" class="dropdown-item">Све</a>
+                <a href="dogs-user.html" class="dropdown-item">Пси</a>
+                <a href="cats-user.html" class="dropdown-item">Мачке</a>
+                <a href="birds-user.html" class="dropdown-item">Птице</a>
+              </div>
             </div>
-        <!-- Page Header Start -->
-        <div class="page-header mb-0" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 id="h2-about">О нама</h2>
-                    </div>
-                    <div class="col-12">
-                        <div class="bread">
-                            <a href="index.html">Почетна</a>
-                            <a href="">О нама</a>
-                        </div>
-                    </div>
-                </div>
+            <a href="losts-user.html" class="nav-item nav-link"
+              >Изгубљени љубимци</a
+            >
+            <a href="add-lost.html" class="nav-item nav-link">Додај оглас</a>
+            <a href="user-profile.html" class="nav-item nav-link">Мој налог</a>
+            <a href="about-user.html" class="nav-item nav-link">О нама</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                >Језик</a
+              >
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item" id="srb"
+                  >Српски</a
+                >
+                <a href="about-user-eng.html" class="dropdown-item" id="eng"
+                  >Енглески</a
+                >
+              </div>
             </div>
+            <button
+              class="btn btn-outline-danger log-out-btn"
+              onclick="logout()"
+            >
+              Одјави се
+            </button>
+          </div>
         </div>
-        <!-- Page Header End -->
-        
-
-        <!-- About Start -->
-         <div class="about">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-img">
-                            <img src="../img/logo1.jpg" alt="Image">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <div class="section-header">
-                                <p id="about-p">О нама</p>
-                                <h2 id="about-h2">Ми смо НАДА!</h2>
-                            </div>
-                            <div class="about-text">
-                                <p id="about-p1">
-                                    Азил "Нада за животиње" је азил за заштиту напуштених, како здравих, тако и болесних, инвалидних и старих животиња, који се налази у Београду.
-                                </p>
-                                <p id="about-p2">
-                                    Азил је настао пре 20 година и формално је регистрован као удружење за заштиту животиња. Основала га је Марија Марковић самостално, без ичије помоћи, а данас у азилу живи око 400 животиња.</p>
-                                <p id="about-p3">
-                                    Иако постоји преко 20 година, азил се свакодневно бори за суву егзистенцију, а највећи проблем представља, храна, јер, како би се прехранила све животиње, дневно је потребно преко 100 килограма хране.</p>
-                                <p id="about-p4">
-                                    Други проблем представља зима која тек долази, па је животињама потребно и склониште од хладноће и ветра. Управо из ових разлога покренута је и акција пружања помоћи прихватилишту. Сајт је увелико помогао даљем напретку азила.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+    </div>
+    <!-- Page Header Start -->
+    <div class="page-header mb-0" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 id="h2-about">О нама</h2>
+          </div>
+          <div class="col-12">
+            <div class="bread">
+              <a href="index.html">Почетна</a>
+              <a href="">О нама</a>
             </div>
+          </div>
         </div>
-        <!-- About End -->
+      </div>
+    </div>
+    <!-- Page Header End -->
 
-        <!-- Awards Start -->
-        <div class="food">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 id="awards-h2">Освојене награде</h2>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-md-4">
-                        <div class="food-item">
-                            <img src="../img/award1.png" class="css-award-img" >
-                            <h2>CSS Design Award, 2021</h2>
-                            <p>Дизајн месеца - јун 2021</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="food-item">
-                            <img src="../img/award2.png" class="eu-awards-img">
-                            <h2>Web Awards EU, 2021</h2>
-                            <p>Најбољи вебсајт на подручију Европе, 2021</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="food-item">
-                            <img src="../img/award3.jpg" class="webby-awards-img">
-                            <h2>THE WEBBY AWARDS, 2022</h2>
-                            <p>Вебсајт године у категорији "Животиње и љубимци", 2022 </p>
-                        </div>
-                    </div>
-                </div>
+    <!-- About Start -->
+    <div class="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="about-img">
+              <img src="../img/logo1.jpg" alt="Image" />
             </div>
-        </div>
-        <!-- Awards End -->
-
-      
-        <!-- Contact Start -->
-        <div class="contact">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p id="contact-us">Контактирајте нас</p>
-                    <h2 id="contact-info">Контакт информације</h2>
-                </div>
-                <div class="row align-items-center contact-information">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="contact-info">
-                            <div class="contact-icon">
-                                <i class="fa fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3 id="contact-address">Адреса</h3>
-                                <p id="contact-addres-val">Булевар Краља Александра 73, Београд, Србија</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="contact-info">
-                            <div class="contact-icon">
-                                <i class="fa fa-phone-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3 id="contact-phone">Контакт телефон</h3>
-                                <p>+381 11 32134321</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="contact-info">
-                            <div class="contact-icon">
-                                <i class="fa fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Email</h3>
-                                <p>animalhope@hotmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="contact-info">
-                            <div class="contact-icon">
-                                <i class="fa fa-share"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3 id="contact-follow">Запрати нас</h3>
-                                <div class="contact-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row contact-form">
-                    <div class="col-md-12">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.788165965896!2d20.473947215217404!3d44.80550557909867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9f5ee145d3%3A0x3ed89b5bb505d83!2z0JXQu9C10LrRgtGA0L7RgtC10YXQvdC40YfQutC4INGE0LDQutGD0LvRgtC10YIg0KPQvdC40LLQtdGA0LfQuNGC0LXRgtCwINGDINCR0LXQvtCz0YDQsNC00YM!5e0!3m2!1ssr!2srs!4v1624558119852!5m2!1ssr!2srs" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
-                    </div>
-                </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content">
+              <div class="section-header">
+                <p id="about-p">О нама</p>
+                <h2 id="about-h2">Ми смо НАДА!</h2>
+              </div>
+              <div class="about-text">
+                <p id="about-p1">
+                  Азил "Нада за животиње" је азил за заштиту напуштених, како
+                  здравих, тако и болесних, инвалидних и старих животиња, који
+                  се налази у Београду.
+                </p>
+                <p id="about-p2">
+                  Азил је настао пре 20 година и формално је регистрован као
+                  удружење за заштиту животиња. Основала га је Марија Марковић
+                  самостално, без ичије помоћи, а данас у азилу живи око 400
+                  животиња.
+                </p>
+                <p id="about-p3">
+                  Иако постоји преко 20 година, азил се свакодневно бори за суву
+                  егзистенцију, а највећи проблем представља, храна, јер, како
+                  би се прехранила све животиње, дневно је потребно преко 100
+                  килограма хране.
+                </p>
+                <p id="about-p4">
+                  Други проблем представља зима која тек долази, па је
+                  животињама потребно и склониште од хладноће и ветра. Управо из
+                  ових разлога покренута је и акција пружања помоћи
+                  прихватилишту. Сајт је увелико помогао даљем напретку азила.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Contact End -->
-        
+      </div>
+    </div>
+    <!-- About End -->
 
-         <!-- Footer Start -->
-         <div class="footer">
-            <div class="copyright">
-                <div class="container">
-                    <p id="footer-text">Copyright &copy; 2022 Марко Јовановић, Лазар Госпавић <br> Одсек за софтверско инжењерство Електрохетнички факултет, Универзитет у Београду.</p>
-                </div>
+    <!-- Awards Start -->
+    <div class="food">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 id="awards-h2">Освојене награде</h2>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="food-item">
+              <img src="../img/award1.png" class="css-award-img" />
+              <h2>CSS Design Award, 2021</h2>
+              <p>Дизајн месеца - јун 2021</p>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="food-item">
+              <img src="../img/award2.png" class="eu-awards-img" />
+              <h2>Web Awards EU, 2021</h2>
+              <p>Најбољи вебсајт на подручију Европе, 2021</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="food-item">
+              <img src="../img/award3.jpg" class="webby-awards-img" />
+              <h2>THE WEBBY AWARDS, 2022</h2>
+              <p>Вебсајт године у категорији "Животиње и љубимци", 2022</p>
+            </div>
+          </div>
         </div>
-        <!-- Footer End -->
+      </div>
+    </div>
+    <!-- Awards End -->
 
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Contact Start -->
+    <div class="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <p id="contact-us">Контактирајте нас</p>
+          <h2 id="contact-info">Контакт информације</h2>
+        </div>
+        <div class="row align-items-center contact-information">
+          <div class="col-md-6 col-lg-3">
+            <div class="contact-info">
+              <div class="contact-icon">
+                <i class="fa fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3 id="contact-address">Адреса</h3>
+                <p id="contact-addres-val">
+                  Булевар Краља Александра 73, Београд, Србија
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="contact-info">
+              <div class="contact-icon">
+                <i class="fa fa-phone-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3 id="contact-phone">Контакт телефон</h3>
+                <p>+381 11 32134321</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="contact-info">
+              <div class="contact-icon">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Email</h3>
+                <p>animalhope@hotmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="contact-info">
+              <div class="contact-icon">
+                <i class="fa fa-share"></i>
+              </div>
+              <div class="contact-text">
+                <h3 id="contact-follow">Запрати нас</h3>
+                <div class="contact-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-youtube"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row contact-form">
+          <div class="col-md-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.788165965896!2d20.473947215217404!3d44.80550557909867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9f5ee145d3%3A0x3ed89b5bb505d83!2z0JXQu9C10LrRgtGA0L7RgtC10YXQvdC40YfQutC4INGE0LDQutGD0LvRgtC10YIg0KPQvdC40LLQtdGA0LfQuNGC0LXRgtCwINGDINCR0LXQvtCz0YDQsNC00YM!5e0!3m2!1ssr!2srs!4v1624558119852!5m2!1ssr!2srs"
+              width="100%"
+              height="500"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact End -->
 
-        
-        <!-- Template Javascript -->
+    <!-- Footer Start -->
+    <div class="footer">
+      <div class="copyright">
+        <div class="container">
+          <p id="footer-text">
+            Copyright &copy; 2022 Марко Јовановић, Лазар Госпавић <br />
+            Одсек за софтверско инжењерство Електрохетнички факултет,
+            Универзитет у Београду.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
 
-        <script src="../js/login.js"></script>
-            
-</body>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+
+    <script src="../js/login.js"></script>
+  </body>
 </html>

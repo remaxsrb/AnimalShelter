@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Nada - Cats</title>
+    <title>Нада - Птице</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="Free Website Template" name="keywords" />
     <meta content="Free Website Template" name="description" />
@@ -27,18 +27,18 @@
 
     <link rel="stylesheet" href="../styles/style.css" />
 
-    <title>Cats</title>
+    <title>Птице</title>
   </head>
 
   <body>
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid">
-          <a href="index-eng.html"
+          <a href="index-eng-user.html"
             ><img src="../img/logo-color-trans.png" height="80px" width="80px"
           /></a>
           &nbsp; &nbsp;
-          <a href="index-eng.html" class="navbar-brand">NADA</a>
+          <a href="index-eng-user.html" class="navbar-brand">NADA</a>
           <button
             type="button"
             class="navbar-toggler"
@@ -53,7 +53,9 @@
             id="navbarCollapse"
           >
             <div class="navbar-nav ml-auto">
-              <a href="index-eng.html" class="nav-item nav-link active">Home Page</a>
+              <a href="index-eng-user.html" class="nav-item nav-link active"
+                >Home</a
+              >
               <div class="nav-item dropdown">
                 <a
                   href="#"
@@ -62,14 +64,18 @@
                   >Animals</a
                 >
                 <div class="dropdown-menu">
-                  <a href="pets-eng.html" class="dropdown-item">All</a>
-                  <a href="dogs-eng.html" class="dropdown-item">Dogs</a>
-                  <a href="cats-eng.html" class="dropdown-item">Cats</a>
-                  <a href="birds-eng.html" class="dropdown-item">Birds</a>
+                  <a href="pets-eng-user.html" class="dropdown-item">All</a>
+                  <a href="dogs-eng-user.html" class="dropdown-item">Dogs</a>
+                  <a href="cats-eng-user.html" class="dropdown-item">Cats</a>
+                  <a href="birds-eng-user.html" class="dropdown-item">Birds</a>
                 </div>
               </div>
-              <a href="losts-eng.html" class="nav-item nav-link">Lost pets</a>
-              <a href="about-eng.html" class="nav-item nav-link">About us</a>
+              <a href="losts-user.html" class="nav-item nav-link"
+                >Изгубљени љубимци</a
+              >
+              <a href="add-eng-lost.html" class="nav-item nav-link">Add lost pet</a>
+              <a href="user-profile-eng.html" class="nav-item nav-link">My profile</a>
+              <a href="about-user-eng.html" class="nav-item nav-link">About us</a>
               <div class="nav-item dropdown">
                 <a
                   href="#"
@@ -78,10 +84,20 @@
                   >Language</a
                 >
                 <div class="dropdown-menu">
-                  <a href="cats.html" class="dropdown-item"> Serbian</a>
-                  <a href="#" class="dropdown-item">English</a>
+                  <a href="birds-user.html" class="dropdown-item" id="srb"
+                    >Serbian</a
+                  >
+                  <a href="#" class="dropdown-item" id="eng"
+                    >English</a
+                  >
                 </div>
               </div>
+              <button
+                class="btn btn-outline-danger log-out-btn"
+                onclick="logout()"
+              >
+                Logout
+              </button>
             </div>
           </div>
         </div>
@@ -91,13 +107,13 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 id="h2-about">Cats</h2>
+            <h2 id="h2-about">Birds</h2>
           </div>
           <div class="col-12">
             <div class="bread">
-              <a href="index.html">Home</a>
-              <a href="">Animals</a>
-              <a href="cats-eng.html">Cats</a>
+              <a href="index-user-eng.html">Home</a>
+              <a href="pets-user-eng.html">Pets</a>
+              <a href="birds-user-eng.html">Birds</a>
             </div>
           </div>
         </div>
@@ -109,7 +125,7 @@
     <div class="menu all-recipes">
       <div class="container">
         <div class="section-header text-center">
-          <h2 id="h2-recipes-header">Cats</h2>
+          <h2 id="h2-recipes-header">Birds</h2>
         </div>
         <div class="row" id="search-select-recipes">
           <div class="col-md-4 offset-2">
@@ -161,7 +177,7 @@
           </div>
         </div>
         <div class="blog">
-          <div class="row" id="cats">
+          <div class="row" id="birds">
             <!-- Animals -->
           </div>
         </div>
@@ -170,16 +186,16 @@
 
     <!-- Footer Start -->
     <div class="footer">
-      <div class="copyright">
-        <div class="container">
-          <p id="footer-text">
-            Copyright &copy; 2022 Marko Jovanović, Lazar Gospavić <br />
-            Department of Software Enginering School of Electrical enginering,
-            University of Belgrade.
-          </p>
+        <div class="copyright">
+          <div class="container">
+            <p id="footer-text">
+              Copyright &copy; 2022 Marko Jovanović, Lazar Gospavić <br />
+              Department of Software Enginering School of Electrical enginering,
+              University of Belgrade.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
     <!-- Footer End -->
 
     <!-- JavaScript Libraries -->
@@ -187,6 +203,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../js/load_cats.js"></script>
+    <script src="../js/load_birds.js"></script>
+    <script src="../js/login.js"></script>
   </body>
 </html>

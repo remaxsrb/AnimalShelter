@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Hope - Birds</title>
+    <title>Nada - Cat</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="Free Website Template" name="keywords" />
     <meta content="Free Website Template" name="description" />
@@ -27,65 +27,81 @@
 
     <link rel="stylesheet" href="../styles/style.css" />
 
-    <title>Birds</title>
+    <title>Cat</title>
   </head>
 
   <body>
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-light navbar-light">
-      <div class="container-fluid">
-        <a href="index-eng.html"
-          ><img src="../img/logo-color-trans.png" height="80px" width="80px"
-        /></a>
-        &nbsp; &nbsp;
-        <a href="index-eng.html" class="navbar-brand">HOPE</a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarCollapse"
-        >
-          <div class="navbar-nav ml-auto">
-            <a href="index.html" class="nav-item nav-link active">Home Page</a>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                >Animals</a
+        <div class="container-fluid">
+          <a href="index-eng-user.html"
+            ><img src="../img/logo-color-trans.png" height="80px" width="80px"
+          /></a>
+          &nbsp; &nbsp;
+          <a href="index-eng-user.html" class="navbar-brand">NADA</a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarCollapse"
+          >
+            <div class="navbar-nav ml-auto">
+              <a href="index-eng-user.html" class="nav-item nav-link active"
+                >Home</a
               >
-              <div class="dropdown-menu">
-                <a href="pets-eng.html" class="dropdown-item">All</a>
-                <a href="dogs-eng.html" class="dropdown-item">Dogs</a>
-                <a href="cats-eng.html" class="dropdown-item">Cats</a>
-                <a href="birds-eng.html" class="dropdown-item">Birds</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >Animals</a
+                >
+                <div class="dropdown-menu">
+                  <a href="pets-eng-user.html" class="dropdown-item">All</a>
+                  <a href="dogs-eng-user.html" class="dropdown-item">Dogs</a>
+                  <a href="cats-eng-user.html" class="dropdown-item">Cats</a>
+                  <a href="birds-eng-user.html" class="dropdown-item">Birds</a>
+                </div>
               </div>
-            </div>
-            <a href="losts-eng.html" class="nav-item nav-link">Lost pets</a>
-            <a href="about-eng.html" class="nav-item nav-link">About us</a>
-            <div class="nav-item dropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                >Language</a
+              <a href="losts-user.html" class="nav-item nav-link"
+                >Изгубљени љубимци</a
               >
-              <div class="dropdown-menu">
-                <a href="bird.html" class="dropdown-item"> Serbian</a>
-                <a href="#" class="dropdown-item">English</a>
+              <a href="add-eng-lost.html" class="nav-item nav-link">Add lost pet</a>
+              <a href="user-profile-eng.html" class="nav-item nav-link">My profile</a>
+              <a href="about-user-eng.html" class="nav-item nav-link">About us</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >Language</a
+                >
+                <div class="dropdown-menu">
+                  <a href="cat-user.html" class="dropdown-item" id="srb"
+                    >Serbian</a
+                  >
+                  <a href="#" class="dropdown-item" id="eng"
+                    >English</a
+                  >
+                </div>
               </div>
+              <button
+                class="btn btn-outline-danger log-out-btn"
+                onclick="logout()"
+              >
+                Logout
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </div>
     <!-- Page Header Start -->
     <div class="page-header mb-0" id="about">
       <div class="container">
@@ -95,9 +111,9 @@
           </div>
           <div class="col-12">
             <div class="bread">
-              <a href="index-eng.html">Home</a>
-              <a href="pets-eng.html">Pets</a>
-              <a href="birds-eng.html">Birds</a>
+                <a href="index-user-eng.html">Home</a>
+                <a href="pets-user-eng.html">Animals</a>
+                <a href="cats-user-eng.html">Cats</a>
               <a href="" class="pet-name"></a>
             </div>
           </div>
@@ -139,9 +155,9 @@
         <div class="copyright">
           <div class="container">
             <p id="footer-text">
-              Copyright &copy; 2022 Marko Jovanović, Lazar Gospavić <br />
-              Department of Software Enginering School of Electrical enginering,
-              University of Belgrade.
+                Copyright &copy; 2022 Marko Jovanović, Lazar Gospavić <br />
+                Department of Software Enginering School of Electrical enginering,
+                University of Belgrade.
             </p>
           </div>
         </div>
@@ -156,5 +172,6 @@
 
     <!-- Template Javascript -->
     <script src="../js/pet.js"></script>
+    <script src="../js/login.js"></script>
   </body>
 </html>

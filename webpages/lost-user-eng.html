@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Nada - Home</title>
+    <title>Nada - Lost pet</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="Free Website Template" name="keywords" />
     <meta content="Free Website Template" name="description" />
@@ -27,18 +27,18 @@
 
     <link rel="stylesheet" href="../styles/style.css" />
 
-    <title>Home</title>
+    <title>Lost pet</title>
   </head>
 
   <body>
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-light navbar-light">
       <div class="container-fluid">
-        <a href="index-user-eng.html"
+        <a href="index-eng-user.html"
           ><img src="../img/logo-color-trans.png" height="80px" width="80px"
         /></a>
         &nbsp; &nbsp;
-        <a href="index-user-eng.html" class="navbar-brand">NADA</a>
+        <a href="index-eng-user.html" class="navbar-brand">NADA</a>
         <button
           type="button"
           class="navbar-toggler"
@@ -53,7 +53,7 @@
           id="navbarCollapse"
         >
           <div class="navbar-nav ml-auto">
-            <a href="index-user-eng.html" class="nav-item nav-link active"
+            <a href="index-eng-user.html" class="nav-item nav-link active"
               >Home</a
             >
             <div class="nav-item dropdown">
@@ -64,20 +64,22 @@
                 >Animals</a
               >
               <div class="dropdown-menu">
-                <a href="pets-eng.html" class="dropdown-item">All</a>
-                <a href="dogs-eng.html" class="dropdown-item">Dogs</a>
-                <a href="cats-eng.html" class="dropdown-item">Cats</a>
-                <a href="birds-eng.html" class="dropdown-item">Birds</a>
+                <a href="pets-eng-user.html" class="dropdown-item">All</a>
+                <a href="dogs-eng-user.html" class="dropdown-item">Dogs</a>
+                <a href="cats-eng-user.html" class="dropdown-item">Cats</a>
+                <a href="birds-eng-user.html" class="dropdown-item">Birds</a>
               </div>
             </div>
-            <a href="losts-eng.html" class="nav-item nav-link">Lost pets</a>
-            <a href="add-lost-eng.html" class="nav-item nav-link"
+            <a href="losts-user.html" class="nav-item nav-link"
+              >Изгубљени љубимци</a
+            >
+            <a href="add-eng-lost.html" class="nav-item nav-link"
               >Add lost pet</a
             >
             <a href="user-profile-eng.html" class="nav-item nav-link"
               >My profile</a
             >
-            <a href="about-eng.html" class="nav-item nav-link">About us</a>
+            <a href="about-user-eng.html" class="nav-item nav-link">About us</a>
             <div class="nav-item dropdown">
               <a
                 href="#"
@@ -86,7 +88,7 @@
                 >Language</a
               >
               <div class="dropdown-menu">
-                <a href="index-user.html" class="dropdown-item" id="srb"
+                <a href="lost-user.html" class="dropdown-item" id="srb"
                   >Serbian</a
                 >
                 <a href="#" class="dropdown-item" id="eng"
@@ -98,99 +100,83 @@
               class="btn btn-outline-danger log-out-btn"
               onclick="logout()"
             >
-              Log out
+              Logout
             </button>
           </div>
         </div>
       </div>
     </div>
-
     <!-- Page Header Start -->
-    <div class="page-header mb-0">
+    <div class="page-header mb-0" id="about">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2>Welcome!</h2>
-            <br /><br />
+            <h2 id="h2-about" class="lost-name"></h2>
+          </div>
+          <div class="col-12">
+            <div class="bread">
+              <a href="index-user-eng.html">Home</a>
+              <a href="losts-user-eng.html">Lost pets</a>
+              <a href="" class="lost-name"></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Page Header End -->
 
-    <!-- Blog Start -->
-    <div class="blog">
-      <div class="container">
-        <div class="section-header text-center">
-          <p>Blog</p>
-          <h2 id="blog-text">Latest</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="blog-item">
-              <div class="blog-img">
-                <img src="../img/blog2.webp" alt="Blog" />
-              </div>
-              <div class="blog-content">
-                <h2 class="blog-title">Pet can extend your life</h2>
-                <div class="blog-meta">
-                  <p><i class="far fa-user"></i>&nbspLazar Gospavić</p>
-                  <p><i class="far fa-calendar-alt"></i>&nbsp17-June-2022</p>
+    <!-- Single Post Start-->
+    <div class="single">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="sidebar">
+                <div class="sidebar-widget">
+                  <h2 class="widget-title add-name">Pet name: </h2>
+                  <h2 class="widget-title add-user">Username: </h2>
+                  <h2 class="widget-title add-desc">Description: </h2>
+                  <h2 class="widget-title add-phone">Contact phone: </h2>
+                  <button id="pdf" class="btn custom-btn" onclick="generatePDF()">
+                    Download PDF
+                  </button>
                 </div>
-                <div class="blog-text">
-                  <p>
-                    Researchers believe that people who live with a pet deal
-                    better with stressful situations in life than those who
-                    don't because of the habbit to take care of their pets. Next
-                    time when your pet makes you angry because he ruined your
-                    shoes, his fur on your clothes or when dog's barking wakes
-                    you at night, remember that they reduced the changce of you
-                    getting a hearth attack or other fatal situations.
-                  </p>
+                <div class="sidebar-widget">
+                  <a class="btn custom-btn" id="delete-button">Delete</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="blog-item">
-              <div class="blog-img">
-                <img src="../img/car-dog.webp" alt="Blog" />
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="single-content"></div>
+  
+              <div class="single-comment">
+                <h2 id="recipe-comments"></h2>
+                <ul class="comment-list">
+                  <!-- Comments here -->
+                </ul>
               </div>
-              <div class="blog-content">
-                <h2 class="blog-title">Traveling with a dog</h2>
-                <div class="blog-meta">
-                  <p><i class="far fa-user"></i>&nbspMarko Jovanović/p></p>
-                  <p><i class="far fa-calendar-alt"></i>&nbsp15-June-2022</p>
-                </div>
-                <div class="blog-text">
-                  <p>
-                    Dog seatbelts in your car are compatible with all standard
-                    seatbelt buckles. Not only is a risk of injury and accidents
-                    of pets very high, there are also high fees for not obeying
-                    propositions. Therefore: seatbelts are worth it for all
-                    passangers regardless of their leg count.
-                  </p>
-                </div>
+              <div class="comment-form">
+                <form>
+                  <h2 id="leave-comment">Comment</h2>
+                  <div class="form-group">
+                    <textarea
+                      id="message"
+                      cols="30"
+                      rows="5"
+                      class="form-control"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <a class="btn custom-btn" id="comment-submit">Submit</a>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Blog End -->
-
-    <!-- Lost Start -->
-    <div class="foods">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2 id="awards-h2">Lost pets</h2>
-        </div>
-        <div class="row align-items-center" id="pics">
-          <!-- Recipes -->
-        </div>
-      </div>
-    </div>
-    <!-- Top Foods End -->
+    <!-- Single Post End-->
 
     <!-- Footer Start -->
     <div class="footer">
@@ -209,10 +195,10 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../js/register.js"></script>
+    <script src="../js/lost.js"></script>
     <script src="../js/login.js"></script>
-    <script src="../js/index.js"></script>
   </body>
 </html>
