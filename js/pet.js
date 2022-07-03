@@ -3,10 +3,10 @@ $(document).ready(function () {
     let currPet = JSON.parse(localStorage.getItem("currPet"));
   
     $(".pet-name").text(currPet.name);
-    $(".add-name").text("Име љубимца: " + currPet.name);
-    $(".add-desc").text("Опис: " + currPet.description);
-    $(".add-year").text("Година: " + currPet.years);
-    $(".add-weight").text("Тежина: " + currPet.weight);
+    $(".add-name").append(currPet.name);
+    $(".add-desc").append(currPet.description);
+    $(".add-year").append(currPet.years);
+    $(".add-weight").append(currPet.weight);
 
 
     $(".images-and-videos")

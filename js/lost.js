@@ -7,10 +7,10 @@ $(document).ready(function () {
   }
 
   $(".lost-name").text(currLostAnimal.petName);
-  $(".add-name").text("Име љубимца: " + currLostAnimal.petName);
-  $(".add-user").text("Име корисника: " + currLostAnimal.user);
-  $(".add-desc").text("Опис: " + currLostAnimal.opis);
-  $(".add-phone").text("Контакт телефон: " + currLostAnimal.phone);
+  $(".add-name").append(currLostAnimal.petName);
+  $(".add-user").append(currLostAnimal.user);
+  $(".add-desc").append(currLostAnimal.opis);
+  $(".add-phone").append(currLostAnimal.phone);
   let currUser = null;
   if (
     localStorage.getItem("loggedUser") != "" &&
@@ -41,7 +41,7 @@ $(document).ready(function () {
     let msg = $("#message").val();
 
     if (msg == "") {
-      $("#msg-empty-error").text("Niste uneli tekst komentara");
+      $("#msg-empty-error").text("Нисте унели текст коментара!");
       return false;
     } else {
       let user = JSON.parse(localStorage.getItem("loggedUser"));
