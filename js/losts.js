@@ -17,7 +17,11 @@ $(document).ready(function() {
     $(".animals").click(function() {
         let animal = lostAnimals.find(element=>element.petName == $(this).attr('id'))
         localStorage.setItem("currLostAnimal", JSON.stringify(animal))
-        window.location.href = "lost.html"
+        if(localStorage.getItem("loggedUser") != "" &&
+        localStorage.getItem("loggedUser") != null){
+            window.location.href = "lost-user.html"
+        }
+        else window.location.href = "lost.html"
     })
 
 
