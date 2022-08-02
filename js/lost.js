@@ -117,7 +117,7 @@ $(document).ready(function () {
     }
     lostAnimals.splice(petToDelete, 1);
     localStorage.setItem("lostAnimals", JSON.stringify(lostAnimals));
-    location.href= "../webpages/losts.html";
+    location.href= "../webpages/losts-user.html";
   }
 });
 
